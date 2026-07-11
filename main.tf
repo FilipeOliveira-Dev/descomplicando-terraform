@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 terraform {
-  backend "s3" {
+  backend "s3" {te
     bucket = "curso-linuxtips-terraform"
     key    = "terraform-statefile.tfstate"
     region = "us-east-1"
