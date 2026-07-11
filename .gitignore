@@ -1,0 +1,9 @@
+# Desconsiderar pastas geradas pelo Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Desconsiderar variáveis sensíveis ou locais
+*.tfvars
+*.tfvars.json
