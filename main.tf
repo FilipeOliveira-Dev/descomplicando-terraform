@@ -1,10 +1,14 @@
 provider "aws" {
   region  = "us-east-1"
-  version = "~> 2.0"
+}
+
+provider "aws" {
+  alias = "west-2"
+  region  = "us-west-2"
 }
 
 terraform {
-  backend "s3" {te
+  backend "s3" {
     bucket = "curso-linuxtips-terraform"
     key    = "terraform-statefile.tfstate"
     region = "us-east-1"
