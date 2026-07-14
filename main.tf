@@ -10,6 +10,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "curso-linuxtips-terraform"
+    dynamodb_table = "terraform-state-lock-dynamo"
     key    = "terraform-statefile.tfstate"
     region = "us-east-1"
   }
